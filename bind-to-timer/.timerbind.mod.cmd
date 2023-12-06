@@ -1,1 +1,0 @@
-savedcmd_/home/ivan/linux_work/talk/bind-to-timer/timerbind.mod := printf '%s\n'   timerbind.o | awk '!x[$$0]++ { print("/home/ivan/linux_work/talk/bind-to-timer/"$$0) }' > /home/ivan/linux_work/talk/bind-to-timer/timerbind.mod
