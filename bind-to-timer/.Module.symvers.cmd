@@ -1,0 +1,1 @@
+savedcmd_/home/ivan/linux_work/talk/bind-to-timer/Module.symvers :=  scripts/mod/modpost -M        -o /home/ivan/linux_work/talk/bind-to-timer/Module.symvers -T /home/ivan/linux_work/talk/bind-to-timer/modules.order -i Module.symvers -e 

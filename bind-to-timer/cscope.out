@@ -1,0 +1,343 @@
+cscope 15 $HOME/linux_work/talk/bind-to-timer               0000001988
+	@timerbind.c
+
+1 
+	~<löux/moduÀ.h
+>
+
+2 
+	~<löux/öô.h
+>
+
+3 
+	~<sound/timî.h
+>
+
+5 
+¢d_timî_ö°™˚
+ *
+	gtimîi
+;
+
+6 
+¢d_timî_id
+ 
+	gtid
+ = {
+
+7 .
+dev_˛ass
+ = 
+SNDRV_TIMER_CLASS_GLOBAL
+,
+
+8 .
+	gdev_s˛ass
+ = 
+SNDRV_TIMER_SCLASS_APPLICATION
+,
+
+11 
+	$böd_timî
+()
+
+13 
+îr
+;
+
+15 
+tid
+.
+ˇrd
+ = 
+NULL
+;
+
+16 
+tid
+.
+devi˚
+ = 
+SNDRV_TIMER_GLOBAL_HRTIMER
+;
+
+17 
+tid
+.
+subdevi˚
+ = 0;
+
+18 
+timîi
+ = 
+	`¢d_timî_ö°™˚_√w
+("Demotimer");
+
+19 i‡(!
+timîi
+) {
+
+20 
+	`¥_îr
+("Can't createÅheÅimer\n");
+
+23 
+timîi
+->
+Êags
+ |
+SNDRV_TIMER_IFLG_AUTO
+;
+
+24 
+timîi
+->
+ˇŒback
+ = 
+timî_func
+;
+
+25 
+timîi
+->
+cˇŒback
+ = 
+timî_evít_func
+;
+
+27 
+îr
+ = 
+	`¢d_timî_›í
+(
+timîi
+, &
+tid
+, 0x1234);
+
+28 i‡(
+îr
+) {
+
+29 
+	`¥_îr
+("Eº‹ o≥nögÅhêtimî: %d\n", 
+îr
+);
+
+33 
+	}
+}
+
+35 
+__öô
+ 
+	$mod_öô
+()
+
+37 
+	`böd_timî
+();
+
+39 
+	}
+}
+
+41 
+__exô
+ 
+	$mod_exô
+()
+
+43 i‡(
+timîi
+)
+
+44 
+	`¢d_timî_ö°™˚_‰ì
+(
+timîi
+);
+
+45 
+	}
+}
+
+47 
+MODULE_LICENSE
+("GPL");
+
+48 
+MODULE_AUTHOR
+("Ivan Orlov");
+
+49 
+moduÀ_öô
+(
+mod_öô
+);
+
+50 
+moduÀ_exô
+(
+mod_exô
+);
+
+	@timerbind.mod.c
+
+1 
+	~<löux/moduÀ.h
+>
+
+2 
+	#INCLUDE_VERMAGIC
+
+
+	)
+
+3 
+	~<löux/buûd-ß….h
+>
+
+4 
+	~<löux/ñ‚Ÿe-…o.h
+>
+
+5 
+	~<löux/exp‹t-öã∫Æ.h
+>
+
+6 
+	~<löux/vîmagic.h
+>
+
+7 
+	~<löux/compûî.h
+>
+
+9 #ifde‡
+CONFIG_UNWINDER_ORC
+
+
+10 
+	~<asm/‹c_hódî.h
+>
+
+11 
+	gORC_HEADER
+;
+
+14 
+	gBUILD_SALT
+;
+
+15 
+	gBUILD_LTO_INFO
+;
+
+17 
+MODULE_INFO
+(
+vîmagic
+, 
+VERMAGIC_STRING
+);
+
+18 
+MODULE_INFO
+(
+«me
+, 
+KBUILD_MODNAME
+);
+
+20 
+__visibÀ
+ 
+moduÀ
+ 
+__this_moduÀ
+
+
+21 
+__£˘i⁄
+(".gnu.linkonce.this_module") = {
+
+22 .
+«me
+ = 
+KBUILD_MODNAME
+,
+
+23 .
+	göô
+ = 
+öô_moduÀ
+,
+
+24 #ifde‡
+CONFIG_MODULE_UNLOAD
+
+
+25 .
+	gexô
+ = 
+˛ónup_moduÀ
+,
+
+27 .
+	g¨ch
+ = 
+MODULE_ARCH_INIT
+,
+
+30 #ifde‡
+CONFIG_RETPOLINE
+
+
+31 
+MODULE_INFO
+(
+ªçﬁöe
+, "Y");
+
+35 
+MODULE_INFO
+(
+dïíds
+, "");
+
+	@/usr/include/linux/module.h
+
+2 #i‚de‡
+_LINUX_MODULE_H
+
+
+3 
+	#_LINUX_MODULE_H
+
+
+	)
+
+6 
+	#MODULE_INIT_IGNORE_MODVERSIONS
+ 1
+
+	)
+
+7 
+	#MODULE_INIT_IGNORE_VERMAGIC
+ 2
+
+	)
+
+	@
+1
+.
+1
+/usr/include
+3
+56
+timerbind.c
+timerbind.mod.c
+/usr/include/linux/module.h
